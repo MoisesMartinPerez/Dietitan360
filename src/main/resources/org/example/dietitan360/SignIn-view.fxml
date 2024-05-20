@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="599.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.dietitan360.Controllers.SignInController">
+   <children>
+      <Pane layoutX="-6.0" layoutY="-2.0" prefHeight="62.0" prefWidth="429.0" styleClass="label" stylesheets="@../../../CSS/styles.css">
+         <children>
+            <Label fx:id="backLabel" layoutX="11.0" onMouseClicked="#handleBackLabelClick" prefHeight="62.0" prefWidth="45.0" text="&lt;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="38.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="CENTER" layoutX="96.0" layoutY="5.0" prefHeight="53.0" prefWidth="323.0" text="NEW PROFILE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <PasswordField fx:id="passwordPaswordField" layoutX="107.0" layoutY="317.0" prefHeight="35.0" prefWidth="203.0" promptText="Password" />
+      <TextField fx:id="userNameTextField" layoutX="107.0" layoutY="103.0" prefHeight="35.0" prefWidth="203.0" promptText="Name" />
+      <Button fx:id="signInButton" layoutX="151.0" layoutY="422.0" mnemonicParsing="false" onAction="#registerNutritionist" prefHeight="41.0" prefWidth="122.0" style="-fx-background-color: #4ff4bd;" stylesheets="@../../../CSS/styles.css" text="Sign In" textFill="WHITE" />
+      <TextField fx:id="userLastNameTextField" layoutX="107.0" layoutY="159.0" prefHeight="35.0" prefWidth="203.0" promptText="Last name" />
+      <TextField fx:id="userEmailTextField" layoutX="107.0" layoutY="214.0" prefHeight="35.0" prefWidth="203.0" promptText="Email" />
+      <TextField fx:id="userLicenseNumberTextField" layoutX="107.0" layoutY="264.0" prefHeight="35.0" prefWidth="203.0" promptText="License number" />
+   </children>
+</AnchorPane>

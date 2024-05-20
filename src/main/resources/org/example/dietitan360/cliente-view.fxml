@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="599.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.dietitan360.Controllers.ClienteController">
+   <children>
+      <Pane layoutX="-6.0" layoutY="-2.0" prefHeight="62.0" prefWidth="429.0" styleClass="label" stylesheets="@../../../CSS/styles.css">
+         <children>
+            <Label fx:id="backLabel" layoutX="11.0" onMouseClicked="#handleBackLabelClick" prefHeight="62.0" prefWidth="45.0" text="&lt;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="38.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="66.0" layoutY="5.0" prefHeight="53.0" prefWidth="331.0" text="MY CLIENTS" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="newClientButton" layoutX="234.0" layoutY="87.0" mnemonicParsing="false" onAction="#addNewClient" prefHeight="42.0" prefWidth="174.0" style="-fx-background-color: #4ff4bd;" stylesheets="@../../../CSS/styles.css" text="New Client" textFill="WHITE" />
+      <Button fx:id="dropClientButton" layoutX="234.0" layoutY="222.0" mnemonicParsing="false" onAction="#deleteSelectedClient" prefHeight="42.0" prefWidth="174.0" style="-fx-background-color: #ff9393;" stylesheets="@../../../CSS/styles.css" text="Drop Client" textFill="WHITE" />
+      <Button fx:id="modifyClientButton" layoutX="234.0" layoutY="152.0" mnemonicParsing="false" onAction="#modifySelectedClient" prefHeight="42.0" prefWidth="174.0" style="-fx-background-color: #eea1ef;" stylesheets="@../../../CSS/styles.css" text="Modify Client" textFill="WHITE" />
+      <TextField fx:id="nameTextField" layoutX="27.0" layoutY="74.0" promptText="Name" />
+      <TextField fx:id="lastNameTextField" layoutX="27.0" layoutY="116.0" promptText="Last name" />
+      <TextField fx:id="heightTextField" layoutX="27.0" layoutY="161.0" promptText="Height" />
+      <TextField fx:id="weightTextField" layoutX="27.0" layoutY="203.0" promptText="Weight" />
+      <TextField fx:id="ageTextField" layoutX="27.0" layoutY="243.0" promptText="Age" />
+      <ListView fx:id="clientsListView" layoutX="15.0" layoutY="339.0" prefHeight="228.0" prefWidth="391.0" />
+   </children>
+</AnchorPane>

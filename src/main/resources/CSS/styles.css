@@ -1,0 +1,52 @@
+/* Estilos para el botón */
+.button {
+    -fx-background-color: #41a6ff; /* Cambia el color de fondo del botón */
+    -fx-background-radius: 15; /* Define el radio de las esquinas para hacerlas circulares */
+    -fx-padding: 10 20; /* Añade un poco de relleno al botón */
+    -fx-text-fill: white; /* Cambia el color del texto del botón */
+    -fx-font-size: 14px; /* Cambia el tamaño del texto del botón */
+}
+
+/* Estilo para cuando el botón está siendo presionado */
+.button:pressed {
+    -fx-background-color: #2db8d7; /* Cambia el color de fondo cuando el botón está siendo presionado */
+}
+
+.label {
+    -fx-background-color: #41a6ff;
+}
+
+/* Estilos para el TableView */
+.table-view {
+    -fx-background-color: #f4f4f4; /* Cambia el color de fondo del TableView */
+    -fx-border-color: #d3d3d3; /* Cambia el color del borde */
+    -fx-border-width: 2px; /* Define el grosor del borde */
+    -fx-border-radius: 10px; /* Define el radio de las esquinas para hacerlas circulares */
+}
+
+/* Estilos para las filas del TableView */
+.table-row-cell {
+    -fx-background-color: transparent; /* Fondo transparente por defecto */
+}
+
+.table-row-cell:filled:selected, .table-row-cell:focused:selected {
+    -fx-background-color: #41a6ff; /* Cambia el color de fondo de la fila seleccionada */
+    /*-fx-text-fill: white; /* Cambia el color del texto de la fila seleccionada */
+}
+
+/* Estilos para las celdas del TableView */
+.table-cell {
+    -fx-padding: 8px; /* Añade un poco de relleno a las celdas */
+    -fx-border-color: #d3d3d3; /* Color del borde de las celdas */
+    -fx-border-width: 0 1px 1px 0; /* Grosor del borde: solo derecha e inferior */
+}
+
+/* Opcional: Estilo para las cabeceras de las columnas del TableView */
+.table-column-header {
+    -fx-background-color: #41a6ff; /* Color de fondo de las cabeceras */
+    -fx-text-fill: white; /* Color del texto de las cabeceras */
+    -fx-padding: 10px; /* Añade un poco de relleno a las cabeceras */
+    -fx-font-size: 14px; /* Cambia el tamaño del texto de las cabeceras */
+    -fx-border-color: #d3d3d3; /* Color del borde de las cabeceras */
+    -fx-border-width: 0 1px 1px 0; /* Grosor del borde: solo derecha e inferior */
+}
